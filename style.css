@@ -177,8 +177,39 @@ color:#141131 ;
 .main__tarif-week {
 }
 .main__button {
+    border-radius: 100px;
+background: #FFF;
+padding: 16px;
+text-decoration: none;
+text-align: center;
+white-space: nowrap;
+margin: 8px 0 28px 0;
+width: 100%;
+color: #070B33;
+text-align: center;
+font-size: 20px;
+font-style: normal;
+font-weight: 590;
+line-height: 24px; 
 }
 .main__bottom-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .main__bottom-links-item {
+    color: #FFF;
+text-align: center;
+font-size: 13px;
+font-style: normal;
+font-weight: 200;
+line-height: 18px; 
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: none;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+opacity: 0.3016;
 }
