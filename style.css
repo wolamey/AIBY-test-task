@@ -2,35 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: 0.5s;
 }
-
-/* @font-face {
-  font-family: "SF Pro 200";
-  src: url("./assets/font/SF-Pro-Display-Ultralight.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SF Pro 400";
-  src: url("./assets/font/SF-Pro-Display-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SF Pro 600";
-  src: url("./assets/font/SF-Pro-Display-Semibold.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SF Pro 800";
-  src: url("./assets/font/SF-Pro-Display-Heavy.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-} */
 
 .main {
   max-width: 1000px;
@@ -78,46 +52,164 @@
 }
 .main__cards .main__cards-item:nth-child(1) {
   background: url(./assets/imgs/card1.webp) no-repeat center;
+  background-size: cover;
 }
 .main__cards .main__cards-item:nth-child(2) {
   background: url(./assets/imgs/card2.webp) no-repeat center;
+  background-size: cover;
 }
 .main__cards .main__cards-item:nth-child(3) {
   background: url(./assets/imgs/card3.webp) no-repeat center;
+  background-size: cover;
 }
 .main__cards-item-text {
   height: fit-content;
   color: #fff;
-  /* font-family: "SF Pro 400", sans-serif; */
   font-size: 12px;
   font-style: normal;
   line-height: normal;
+  color: #fff;
+  font-weight: 400;
+  line-height: normal;
 }
 .main__tarifs {
-}
-.main__tarif-year {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .main__tarif-item {
+  border-radius: 100px;
+  position: relative;
+  height: 56px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border:1px solid #ffffff00 ;
+  backdrop-filter: blur(5.436563491821289px);
 }
+.main__tarif-item.active {
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5.436563491821289px);
+}
+
+.main__tarif-year.active .main__tarif-deco-path, .main__tarif-year.active .main__tarifs-deco-path-right{
+    opacity: 0;
+}
+.main__tarif-year.active  .main__tarif-year-best{
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.50);
+border:1.1px solid #00b7ff00 ;
+color:#141131 ;
+}
+
+
+
+
+.main__tarif-deco-elements {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 23.8px;
+  top: -10px;
+}
+
 .main__tarif-year-best {
+  border-radius: 100px;
+  border: 1.1px solid #00b5ff;
+  background: linear-gradient(90deg, #bc1fef 0%, #0035ff 100%);
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.5);
+  height: 20px;
+  padding: 0 22px;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__tarifs-deco-path-right {
+  position: absolute;
+  right: -1px;
+  top: -1px;
 }
 .main__tarif-item-container {
+  display: flex;
+  padding: 9px 24px;
+  align-items: center;
+  gap: 44px;
 }
 .main__tarif-item-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .main__tarif-item-name {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
 }
 .main__tarif-item-hint {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  opacity: 0.7;
+  font-weight: 400;
+  line-height: normal;
 }
 .main__tarif-item-right {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
 }
 .main__tarif-item-amount {
 }
 .main__tarif-week {
 }
 .main__button {
+    border-radius: 100px;
+background: #FFF;
+padding: 16px;
+text-decoration: none;
+text-align: center;
+white-space: nowrap;
+margin: 8px 0 28px 0;
+width: 100%;
+color: #070B33;
+text-align: center;
+font-size: 20px;
+font-style: normal;
+font-weight: 590;
+line-height: 24px; 
 }
 .main__bottom-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .main__bottom-links-item {
+    color: #FFF;
+text-align: center;
+font-size: 13px;
+font-style: normal;
+font-weight: 200;
+line-height: 18px; 
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: none;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+opacity: 0.3016;
 }
