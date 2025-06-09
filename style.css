@@ -80,30 +80,39 @@
 .main__tarif-item {
   border-radius: 100px;
   position: relative;
-
-border-radius: 100px;
-background: rgba(255, 255, 255, 0.10);
-backdrop-filter: blur(5.436563491821289px);
+  height: 56px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border:1px solid #ffffff00 ;
+  backdrop-filter: blur(5.436563491821289px);
 }
-.main__tarif-item.active{
-border: 1px solid #FFF;
-background: rgba(255, 255, 255, 0.30);
-backdrop-filter: blur(5.436563491821289px);
+.main__tarif-item.active {
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5.436563491821289px);
 }
 
-.main__tarif-year {
-
+.main__tarif-year.active .main__tarif-deco-path, .main__tarif-year.active .main__tarifs-deco-path-right{
+    opacity: 0;
 }
+.main__tarif-year.active  .main__tarif-year-best{
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.50);
+border:1.1px solid #00b7ff00 ;
+color:#141131 ;
+}
+
+
+
 
 .main__tarif-deco-elements {
   position: absolute;
   display: flex;
   align-items: center;
-  right: 25.8px;
+  right: 23.8px;
   top: -10px;
 }
-.main__tarif-deco-path {
-}
+
 .main__tarif-year-best {
   border-radius: 100px;
   border: 1.1px solid #00b5ff;
@@ -125,8 +134,8 @@ backdrop-filter: blur(5.436563491821289px);
 
 .main__tarifs-deco-path-right {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -1px;
+  top: -1px;
 }
 .main__tarif-item-container {
   display: flex;
@@ -156,11 +165,11 @@ backdrop-filter: blur(5.436563491821289px);
   line-height: normal;
 }
 .main__tarif-item-right {
-    color: #FFF;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   opacity: 0.7;
 }
 .main__tarif-item-amount {
