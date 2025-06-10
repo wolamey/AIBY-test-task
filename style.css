@@ -45,7 +45,7 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 24px 0 33px 0;
-  gap: 4px;
+  gap: 6px;
 }
 .main__cards-item {
   border-radius: 12px;
@@ -76,6 +76,7 @@ body{
   color: #fff;
   font-weight: 400;
   line-height: normal;
+  width: 100%;
 }
 .main__tarifs {
   display: flex;
