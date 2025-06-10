@@ -6,17 +6,21 @@
   transition: 0.5s;
 }
 
+body{
+  
+}
+
 .main {
   max-width: 1000px;
   height: 100vh;
   margin: auto;
 
-  background: url(./assets/imgs/bg.webp) no-repeat center -30px;
+  background: url(./assets/imgs/bg.webp) no-repeat center ;
   background-size: cover;
 }
 .main__container {
   position: relative;
-  padding: 43px 24px 9px 24px;
+  padding: 43px 24px 33px 24px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -24,7 +28,8 @@
 }
 .main__cross {
   position: absolute;
-  top: 43px;
+  top: 70px;
+  left: 22px;
 }
 
 .main__title {
@@ -39,12 +44,12 @@
 .main__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 16px 0 26px 0;
+  margin: 24px 0 33px 0;
   gap: 4px;
 }
 .main__cards-item {
   border-radius: 12px;
-  min-height: 139px;
+  min-height: 146px;
   display: flex;
   align-items: end;
   padding: 9px 9px 12px 9px;
@@ -83,7 +88,7 @@
   height: 56px;
   border-radius: 100px;
   background: rgba(255, 255, 255, 0.1);
-  border:1px solid #ffffff00 ;
+  border: 1px solid #ffffff00;
   backdrop-filter: blur(5.436563491821289px);
 }
 .main__tarif-item.active {
@@ -92,18 +97,16 @@
   backdrop-filter: blur(5.436563491821289px);
 }
 
-.main__tarif-year.active .main__tarif-deco-path, .main__tarif-year.active .main__tarifs-deco-path-right{
-    opacity: 0;
+.main__tarif-year.active .main__tarif-deco-path,
+.main__tarif-year.active .main__tarifs-deco-path-right {
+  opacity: 0;
 }
-.main__tarif-year.active  .main__tarif-year-best{
-    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
-    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.50);
-border:1.1px solid #00b7ff00 ;
-color:#141131 ;
+.main__tarif-year.active .main__tarif-year-best {
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.5);
+  border: 1.1px solid #00b7ff00;
+  color: #141131;
 }
-
-
-
 
 .main__tarif-deco-elements {
   position: absolute;
@@ -177,39 +180,39 @@ color:#141131 ;
 .main__tarif-week {
 }
 .main__button {
-    border-radius: 100px;
-background: #FFF;
-padding: 16px;
-text-decoration: none;
-text-align: center;
-white-space: nowrap;
-margin: 8px 0 28px 0;
-width: 100%;
-color: #070B33;
-text-align: center;
-font-size: 20px;
-font-style: normal;
-font-weight: 590;
-line-height: 24px; 
+  border-radius: 100px;
+  background: #fff;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  margin: 16px 0 34px 0;
+  width: 100%;
+  color: #070b33;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 590;
+  line-height: 24px;
 }
 .main__bottom-links {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .main__bottom-links-item {
-    color: #FFF;
-text-align: center;
-font-size: 13px;
-font-style: normal;
-font-weight: 200;
-line-height: 18px; 
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: none;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
-text-underline-position: from-font;
-opacity: 0.3016;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 18px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  opacity: 0.3016;
 }
