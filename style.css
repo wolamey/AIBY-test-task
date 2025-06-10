@@ -7,9 +7,24 @@
 }
 
 body{
-  
+  overflow-x: hidden;
+  background: #070B0D;
 }
 
+.lang-de .main__bottom-links  .main__bottom-links-item{
+  word-break: break-all;
+}
+.lang-fr .main__tarif-item-hint,
+.lang-pt .main__tarif-item-hint{
+  font-size: 14px;
+}
+
+.lang-pt .main__title{
+    font-size: 35px;
+}
+.lang-fr .main__title{
+     font-size: 33px;
+}
 .main {
   max-width: 1000px;
   height: 100vh;
@@ -52,7 +67,7 @@ body{
   min-height: 139px;
   display: flex;
   align-items: end;
-  padding: 9px 12px 12px 12px;
+  padding: 9px 8px 12px 8px;
   background-size: cover;
 }
 .main__cards .main__cards-item:nth-child(1) {
@@ -91,6 +106,8 @@ body{
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid #ffffff00;
   backdrop-filter: blur(5.436563491821289px);
+  display: flex;
+  align-items: center;
 }
 .main__tarif-item.active {
   border: 1px solid #fff;
@@ -142,10 +159,14 @@ body{
   top: -1px;
 }
 .main__tarif-item-container {
-  display: flex;
-  padding: 9px 24px;
+  display: grid;
+  padding:  9px 24px;
   align-items: center;
-  gap: 44px;
+  gap: 15px;
+  width: 100%;
+
+  grid-template-columns: 186px 1fr;
+
 }
 .main__tarif-item-left {
   display: flex;
@@ -167,6 +188,7 @@ body{
   opacity: 0.7;
   font-weight: 400;
   line-height: normal;
+      white-space: nowrap;
 }
 .main__tarif-item-right {
   color: #fff;
@@ -203,6 +225,7 @@ body{
   align-items: center;
   max-width: 281px;
   margin: 0 auto;
+  gap: 20px;
 }
 .main__bottom-links-item {
   color: #fff;
@@ -240,6 +263,11 @@ body{
 }
 .main__cards-item {
   min-height: 146px;
+}
+.main__tarif-item-container {
+ 
+  grid-template-columns: 171px 1fr;
+
 }
 }
 
