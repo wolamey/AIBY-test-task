@@ -12,7 +12,6 @@ body{
 }
 
 .lang-de .main__bottom-links  .main__bottom-links-item{
-  word-break: break-all;
 }
 .lang-fr .main__tarif-item-hint,
 .lang-pt .main__tarif-item-hint{
