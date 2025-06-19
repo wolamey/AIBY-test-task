@@ -6,24 +6,11 @@
   transition: 0.5s;
 }
 
-body{
+body {
   overflow-x: hidden;
-  background: #070B0D;
+  background: #070b0d;
 }
 
-.lang-de .main__bottom-links  .main__bottom-links-item{
-}
-.lang-fr .main__tarif-item-hint,
-.lang-pt .main__tarif-item-hint{
-  font-size: 14px;
-}
-
-.lang-pt .main__title{
-    font-size: 35px;
-}
-.lang-fr .main__title{
-     font-size: 33px;
-}
 .main {
   max-width: 1000px;
   height: 100vh;
@@ -159,13 +146,12 @@ body{
 }
 .main__tarif-item-container {
   display: grid;
-  padding:  9px 24px;
+  padding: 9px 24px;
   align-items: center;
   gap: 15px;
   width: 100%;
 
   grid-template-columns: 186px 1fr;
-
 }
 .main__tarif-item-left {
   display: flex;
@@ -187,7 +173,7 @@ body{
   opacity: 0.7;
   font-weight: 400;
   line-height: normal;
-      white-space: nowrap;
+  white-space: nowrap;
 }
 .main__tarif-item-right {
   color: #fff;
@@ -232,6 +218,7 @@ body{
   font-size: 13px;
   font-style: normal;
   font-weight: 200;
+  white-space: nowrap;
   line-height: 18px;
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -243,30 +230,52 @@ body{
 }
 
 @media screen and (min-width: 375px) and (max-width: 391px) and (min-height: 812px) {
- .main{
-  background-position: center center;
- }
+  .main {
+    background-position: center center;
+  }
   .main__cards {
-  margin: 24px 0 33px 0;
-}
-.main__cross {
-  top: 70px;
-}
-.main__button {
-
-  margin: 16px 0 34px 0;
-
-}
-.main__container {
-  padding: 43px 24px 33px 24px;
-}
-.main__cards-item {
-  min-height: 146px;
-}
-.main__tarif-item-container {
- 
-  grid-template-columns: 171px 1fr;
-
-}
+    margin: 24px 0 33px 0;
+  }
+  .main__cross {
+    top: 70px;
+  }
+  .main__button {
+    margin: 16px 0 34px 0;
+  }
+  .main__container {
+    padding: 43px 24px 33px 24px;
+  }
+  .main__cards-item {
+    min-height: 146px;
+  }
+  .main__tarif-item-container {
+    grid-template-columns: 171px 1fr;
+  }
 }
 
+.lang-de .main__tarif-item-name {
+  font-size: 14px;
+}
+
+.lang-de .main__bottom-links-item,
+.lang-es .main__bottom-links-item,
+.lang-fr .main__bottom-links-item ,
+.lang-pt .main__bottom-links-item {
+  font-size: 10px;
+}
+
+.lang-de .main__bottom-links,
+.lang-fr .main__bottom-links {
+  max-width: 100%;
+}
+.lang-fr .main__tarif-item-hint,
+.lang-pt .main__tarif-item-hint {
+  font-size: 14px;
+}
+
+.lang-pt .main__title {
+  font-size: 35px;
+}
+.lang-fr .main__title {
+  font-size: 33px;
+}
